@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quotaku 🚀
 
-## Getting Started
+Aplikasi Web Pembelian Paket Data Internet Sederhana
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend**: Next.js
+- **UI Library**: Ant Design + Tailwind CSS
+- **Backend API**: REST API (`/users`, `/packages`, `/transactions`, `/banners`)
+- **Database**: JSON Server / API Service (mock / backend service)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Instalasi & Menjalankan Project
 
-## Learn More
+1. Clone repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/username/quotaku.git
+   cd quotaku
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+    npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Jalankan development server:
+
+   ```bash
+    npx json-server --watch db.json --port 3001
+    npm run dev
+
+   ```
+
+4. Buka di browser:
+
+   ```bash
+    http://localhost:3000
+
+   ```
+
+5. Akun demo:
+   ```bash
+    {
+   "email": "user@test.com",
+   "password": "123456"
+   }
+   ```
+
+
+🧭 Flow UX (Alur Penggunaan Aplikasi)
+1️⃣ Halaman Login / Register
+
+User Flow:
+
+User membuka halaman login
+
+Jika belum punya akun → klik Daftar
+
+User mengisi email & password
+
+Jika login berhasil → diarahkan ke Dashboard
+
+
+
+2️⃣ Dashboard (Beranda)
+
+Yang ditampilkan:
+
+Banner promo
+
+Paket terpopuler
+
+Ringkasan transaksi terakhir user
+
+
+
+3️⃣ Pilih Paket Data
+
+User Flow:
+
+User memilih paket data dari daftar
+
+Sistem menampilkan detail paket (kuota, harga, masa aktif)
+
+
+
+4️⃣ Input Nomor HP (Customer)
+
+User Flow:
+
+User memasukkan nomor tujuan (number only)
+
+Klik lanjut → muncul menu pembayaran
+
+
+
+5️⃣ Pembayaran (Tanpa Pindah Halaman / AJAX)
+
+User Flow:
+
+User memilih metode pembayaran
+
+Klik bayar
+
+Sistem memproses transaksi tanpa reload halaman
+
+Status transaksi ditampilkan
+
+
+
+6️⃣ Riwayat Transaksi
+
+User Flow:
+
+User membuka menu Transaksi
+
+Sistem menampilkan hanya transaksi milik user tersebut
+
+
+7️⃣ Logout
+
+User Flow:
+
+User klik avatar di header
+
+Pilih logout
