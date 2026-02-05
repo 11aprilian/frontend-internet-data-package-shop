@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "user@test.com",
+      "password": "123456",
+      "name": "User Demo"
+    },
+    {
+      "id": "1770263849480",
+      "email": "pencilgon@gmail.com",
+      "password": "pencilgon",
+      "name": "Pencilgon"
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "Best Deal 4G",
+      "quota": 8,
+      "unit": "GB",
+      "duration": 7,
+      "price": 30000,
+      "type": "mingguan",
+      "badge": "Sekali Beli",
+      "category": "internet"
+    },
+    {
+      "id": "2",
+      "name": "Best Deal 4G",
+      "quota": 16,
+      "unit": "GB",
+      "duration": 30,
+      "price": 55000,
+      "type": "bulanan",
+      "badge": "Sekali Beli",
+      "category": "internet"
+    },
+    {
+      "id": "3",
+      "name": "Best Deal 4G",
+      "quota": 25,
+      "unit": "GB",
+      "duration": 30,
+      "price": 80000,
+      "type": "bulanan",
+      "badge": "Sekali Beli",
+      "category": "internet"
+    },
+    {
+      "id": "4",
+      "name": "Best Deal 4G",
+      "quota": 50,
+      "unit": "GB",
+      "duration": 1,
+      "price": 110000,
+      "type": "harian",
+      "badge": "Sekali Beli",
+      "category": "internet"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "image": "https://bankmega.com/media/filer_public/04/3e/043e60e9-0a11-48b0-b264-e92217596929/bm-new-agustusan-23.jpg",
+      "title": "Promo Agustusan"
+    },
+    {
+      "id": 2,
+      "image": "https://www.bankbsi.co.id/storage/promos/jlYXF0uwSiu3Ulqu3Y61QbrNMjZZVP3rlkW4dUV6.jpg",
+      "title": "Promo Spesial BSI"
+    },
+    {
+      "id": 3,
+      "image": "https://pbs.twimg.com/media/G9AR-d9WUAAB-uN.jpg",
+      "title": "Promo Flash Sale"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "a9d1",
+      "user_id": "1",
+      "package_id": "3",
+      "package_name": "Best Deal 4G 25GB",
+      "price": 80000,
+      "date": "2026-02-05",
+      "status": "SUCCESS",
+      "phone": "3",
+      "payment_method": "SHOPEEPAY"
+    },
+    {
+      "id": "1818",
+      "user_id": "1",
+      "package_id": "1",
+      "package_name": "Best Deal 4G 8GB",
+      "price": 30000,
+      "date": "2026-02-05",
+      "status": "SUCCESS",
+      "phone": "44",
+      "payment_method": "GOPAY"
+    },
+    {
+      "id": "7d94",
+      "user_id": "1",
+      "package_id": "4",
+      "package_name": "Best Deal 4G 50GB",
+      "price": 110000,
+      "date": "2026-02-05",
+      "status": "SUCCESS",
+      "phone": "242423",
+      "payment_method": "ALFAMART"
+    }
+  ]
+}
